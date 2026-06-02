@@ -14,7 +14,7 @@ public record TabelaPedagioRequestDTO(
     LocalDate dataVigencia,
 
     @NotBlank(message = "A tabela deve ter pelo menos uma categoria de veículo")
-    List<CategoriaVeiculoRequestDTO> categoria
+    List<CategoriaVeiculoRequestDTO> categorias
 ) {
     
 }

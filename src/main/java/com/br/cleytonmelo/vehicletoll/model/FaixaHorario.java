@@ -22,11 +22,11 @@ public class FaixaHorario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    private Integer horaInicia;
+    private Integer horaInicio;
     private Integer horaFinal;
     private BigDecimal valorUnitario;
 
     @ManyToOne
     @JoinColumn(name = "categoria_id") //Criando a FK no banco
-    private CategoriaVeiculo categoriaVeiculo;
+    private CategoriaVeiculo categoria;
 }

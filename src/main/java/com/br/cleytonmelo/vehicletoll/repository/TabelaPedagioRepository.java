@@ -3,12 +3,13 @@ package com.br.cleytonmelo.vehicletoll.repository;
 import java.time.LocalDate;
 import java.util.Optional;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.br.cleytonmelo.vehicletoll.model.TabelaPedagio;
 
 @Repository
-public interface TabelaPedagioRepository {    
+public interface TabelaPedagioRepository extends JpaRepository<TabelaPedagio, Long> {    
     
     // No mercado, usamos muito as "Derived Queries" do Spring.
     // O simples fato de nomearmos o método seguindo esse padrão (findBy + NomeDoAtributo) 
